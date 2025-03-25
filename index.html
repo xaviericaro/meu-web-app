@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tênis Ajustável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tênis Ajustável</h1>
+
+    <!-- Imagem do tênis -->
+    <img src="https://m.media-amazon.com/images/I/518dqtHFk1L._AC_SX425_.jpg" alt="Tênis Tecnológico" class="tenis-img">
+
+    <!-- Escolha da sola -->
+    <h2>Escolha a sola:</h2>
+    <button onclick="changeSole('asfalto')">Asfalto</button>
+    <button onclick="changeSole('terra')">Terra</button>
+    <button onclick="changeSole('grama')">Grama</button>
+
+    <!-- Ajuste no pé -->
+    <h2>Ajuste no pé:</h2>
+    <input type="range" min="1" max="10" value="5" oninput="adjustFit(this.value)">
+    <p id="fitStatus">Ajuste: Médio</p>
+
+    <!-- Indicadores de umidade e sujeira -->
+    <h2>Status do Tênis:</h2>
+    <div class="status-container">
+        <p>Umidade:</p>
+        <div class="status-bar">
+            <div id="humidity" class="status" style="width: 50%;"></div>
+        </div>
+    </div>
+    
+    <div class="status-container">
+        <p>Sujeira:</p>
+        <div class="status-bar">
+            <div id="dirt" class="status" style="width: 50%;"></div>
+        </div>
+    </div>
+
+    <!-- Botão de autolimpeza -->
+    <button id="cleanButton" onclick="cleanShoes(this)">Ativar Autolimpeza</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

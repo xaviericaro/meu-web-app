@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;  /* Fundo claro, mais suave */
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Para ocupar toda a tela */
+    flex-direction: column;
+    box-sizing: border-box; /* Para garantir que o padding não sobrecarregue o layout */
+}
+
+.tenis-img {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adicionando sombra suave */
+    transition: transform 0.3s ease;
+}
+
+.tenis-img:hover {
+    transform: scale(1.05);  /* Efeito de zoom na imagem quando o usuário passar o mouse */
+}
+
+h1 {
+    font-size: 2rem;  /* Usando rem para garantir boa escala */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #0066cc;  /* Azul mais forte */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1.1rem;  /* Usando rem para garantir boa escala */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d99;  /* Azul mais escuro */
+    transform: scale(1.05);  /* Efeito de aumento do botão ao passar o mouse */
+}
+
+button:active {
+    background-color: #003366;  /* Azul ainda mais escuro quando pressionado */
+}
+
+.status-container {
+    margin: 20px 0;
+    color: #555;
+}
+
+.status-bar {
+    width: 80%;
+    background-color: #e0e0e0;
+    height: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.status {
+    height: 100%;
+    background-color: #ff4d4d;
+    transition: width 0.5s ease-in-out;
+}
+
+#cleanButton {
+    background-color: #33cc33;  /* Verde para indicar a limpeza */
