@@ -53,6 +53,5 @@ Projeto desenvolvido como **atividade escolar**, focado em:
 
 ---
 
-Feito pra escola, mas com estilo 😌
-## Por:
-# Ícaro Xavier
+Feito por:
+Ícaro Xavier
